@@ -4,4 +4,11 @@ type Account @entity {
   owner: Bytes! # address
   spender: Bytes! # address
   balance:BigInt!
+  symbol: String!
+  name: String!
+  decimals: BigInt!
+  totalSupply: BigInt!
+  tradeVolume: BigDecimal!
+  tradeVolumeUSD: BigDecimal!
+  untrackedVolumeUSD: BigDecimal!
 }
